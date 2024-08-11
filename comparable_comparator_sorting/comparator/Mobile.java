@@ -1,5 +1,6 @@
-package sorting.comparator;
+package comparable_comparator_sorting.comparator;
 
+//Sort set of object based on multiple attribute
 public class Mobile {
 
     String brand;

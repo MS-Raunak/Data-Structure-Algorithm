@@ -1,6 +1,6 @@
-package sorting.comparable;
+package comparable_comparator_sorting.comparable;
 //Sort collection of object on single attriute
-public class Student implements  Comparable{
+public class Student implements  Comparable<Student>{
     int id;
     String name;
     int age;
@@ -22,10 +22,10 @@ public class Student implements  Comparable{
 
 
     @Override
-    public int compareTo(Object o) {
-        //return this.id - ((Student)o).id; //sorting based on id
-        //return this.name.compareTo(((Student)o).name); //sorting based on name
-        return Integer.compare(this.age, ((Student)o).age); //sorting based on name
+    public int compareTo(Student student) {
+        //return this.id - student.id; //sorting based on id
+        //return this.name.compareTo(student.name); //sorting based on name
+        return Integer.compare(this.age, student.age); //sorting based on name
     }
 }
 /**

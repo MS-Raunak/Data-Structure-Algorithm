@@ -1,4 +1,4 @@
-package sorting.comparator;
+package comparable_comparator_sorting.comparator;
 
 import java.util.Arrays;
 
@@ -15,10 +15,11 @@ public class Driver {
         //Arrays.sort(mobiles, new SortByName());
 
         //Sort based on price
-        Arrays.sort(mobiles, new SortByPrice());
+        //Arrays.sort(mobiles, new SortByPrice());
 
         //Sort based on RAM
         Arrays.sort(mobiles, new SortByRam());
+
         for (Mobile mobile : mobiles)
             System.out.println(mobile);
     }
