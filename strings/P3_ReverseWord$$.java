@@ -1,2 +1,4 @@
-package strings;public class P3_ReverseWord$$ {
+package strings;
+
+public class P3_ReverseWord$$ {
 }

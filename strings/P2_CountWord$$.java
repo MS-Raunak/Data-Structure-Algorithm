@@ -1,2 +1,4 @@
-package strings;public class P2_CountWord {
+package strings;
+
+public class P2_CountWord$$ {
 }

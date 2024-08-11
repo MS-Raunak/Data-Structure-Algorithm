@@ -1,6 +1,6 @@
 package strings;
 
-public class P5_PalindromeWord {
+public class P6_PalindromeWord {
     public static void main(String[] args) {
         String s = "Madam is staying with dad in Malayalam";
 
