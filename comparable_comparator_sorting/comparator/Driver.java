@@ -1,6 +1,9 @@
 package comparable_comparator_sorting.comparator;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Driver {
     public static void main(String[] args) {
@@ -9,6 +12,8 @@ public class Driver {
         Mobile m3 = new Mobile("Samsung", 17600.0, 6);
         Mobile m4 = new Mobile("IPhone", 19600.0, 4);
 
+        //Using Array
+        /*
         Mobile[] mobiles = {m, m2, m3, m4};
 
         //Sort based on mobile brand
@@ -22,5 +27,18 @@ public class Driver {
 
         for (Mobile mobile : mobiles)
             System.out.println(mobile);
+
+         */
+
+        //Using List
+        List<Mobile> mobileList = new ArrayList<>();
+        mobileList.addAll(List.of(m, m2, m3, m4));
+
+        //Collections.sort(mobileList, new SortByName());
+        //Collections.sort(mobileList, new SortByPrice());
+        mobileList.sort(new SortByRam());
+
+        mobileList.forEach(System.out::println);
+
     }
 }

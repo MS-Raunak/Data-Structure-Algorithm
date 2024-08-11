@@ -23,9 +23,10 @@ public class Student implements  Comparable<Student>{
 
     @Override
     public int compareTo(Student student) {
+        //comparing current field and next field
         //return this.id - student.id; //sorting based on id
-        //return this.name.compareTo(student.name); //sorting based on name
-        return Integer.compare(this.age, student.age); //sorting based on name
+        //return Integer.compare(this.age, student.age); //sorting based on age
+        return this.name.compareTo(student.name); //sorting based on name
     }
 }
 /**
