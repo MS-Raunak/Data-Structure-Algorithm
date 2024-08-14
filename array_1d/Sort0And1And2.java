@@ -21,23 +21,27 @@ public class Sort0And1And2 {
             }
         }*/
 
-        //Solution for fix value
+        //Best Approach
         int zero=0,one=0,two=0;
         for (int ele: arr){
-            if (ele==0) zero++; //count total zero
-            else if (ele==1) one++; //count total one
-            else  two++;            // count total two
+            if (ele==0) {
+                zero++;      //count total zero
+            }
+            else if (ele==1) {
+                one++; //count total one
+            }
+            else  {
+                two++;            // count total two
+            }
         }
-        int index=0;
 
+        int index=0;
         for (int i=0; i<zero; i++) arr[index++] = 0;
         for (int i=0; i<one; i++) arr[index++] = 1;
         for (int i=0; i<two; i++) arr[index++] = 2;
 
-        //Dynamic Solution
-
         System.out.println(Arrays.toString(arr));
-
-
     }
+
+
 }
